@@ -1,0 +1,15 @@
+enable
+config t
+hostname HOST
+enable secret SECRET
+service password encryption
+
+line con 0
+password PASSWORD
+login
+exit
+
+line vty 0 15
+password PASSWORD
+login
+exit
