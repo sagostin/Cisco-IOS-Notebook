@@ -13,3 +13,6 @@ line vty 0 15
 password PASSWORD
 login
 exit
+
+exit
+copy run start
