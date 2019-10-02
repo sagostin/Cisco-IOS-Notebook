@@ -3,7 +3,7 @@ config t
 hostname HOST
 enable secret SECRET
 service password encryption
-no ip-domain-lookup
+no ip domain-lookup
 banner motd #Authorized access only!#
 
 line con 0
