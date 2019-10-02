@@ -4,7 +4,7 @@ hostname HOST
 enable secret SECRET
 service password encryption
 no ip-domain-lookup
-banner motd #
+banner motd #Authorized access only!#
 
 line con 0
 password PASSWORD
