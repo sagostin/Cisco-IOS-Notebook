@@ -1,0 +1,8 @@
+#WAN link
+int g0/0/1
+ip address 10.10.10.2 255.255.255.0
+no shut
+
+ip route [destination & smn (255.255...)] [next hop  (ip address) or exit int]
+ip route 192.168.20.0 255.255.255.0 10.10.10.2
+ip route 192.168.20.0 255.255.255.0 g0/0/1
