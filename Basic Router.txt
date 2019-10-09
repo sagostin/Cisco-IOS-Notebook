@@ -1,0 +1,6 @@
+#Default Gateway & Port that switch is attached to
+enable
+config t
+int g0/1
+ip address 192.168.1.254 255.255.255.0
+no shutdown
