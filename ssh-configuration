@@ -1,0 +1,34 @@
+enable
+config t
+
+!set default gateway
+ip default-gateway 192.168.1.1
+
+!set management interface
+int vlan1
+ip address 192.168.1.2 255.255.255.0
+
+!set hostname & domainname
+hostname myswitch
+ip domain-name myswitch.com
+
+!generate rsa keys (1024 bits)
+crypto key generate rsa
+
+!configure vty
+line vty 0 4
+transport input ssh
+login local
+password 7
+
+!console line
+line con 0
+logging synchronous
+login local
+
+!create user account
+username accountName password accountPassword
+
+!set secret if not already set
+enable secret myEnablePassword
+service password-encryption
